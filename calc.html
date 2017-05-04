@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+</style>
+</head>
+<body>
+
+<p><font size="6">
+<div align="center">
+<h2>Driver Calc</h2>
+</div>
+</font></p>
+
+<p id="calc"></p>
+
+<p><font size="6">
+<div align="center">
+<script>
+var day = prompt("Is it a week day (Mon-Thu)? yes/no");
+var deliveries = prompt("How many deliveries have you completed today?");
+var target = prompt("What's your target income today?");
+var weekDay;
+
+if (day === "yes") {
+	weekDay = 3.75;
+}
+else {
+	weekDay = 4.25;
+}
+
+if (deliveries * weekDay > target) 
+	document.write("Well done! You've beat your target.");
+
+else {
+	document.write(target - deliveries * weekDay + " pounds to go, ");
+}
+
+document.write(+ deliveries * weekDay + " pounds so far");
+</script>
+</div>
+</font></p>
+
+</body>
+</html>
