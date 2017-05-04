@@ -2,12 +2,6 @@
 <html>
 <head>
 <style>
-body  {
-    background-image: url("bground.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 div {
   height: 200px;
   line-height: 200px;
@@ -33,7 +27,7 @@ span {
 <p><font size="6">
 <div align="center">
 <script>
-var day = prompt("Is it a week day (Mon-Thu)? yes/no");
+vvar day = prompt("Is it a week day (Mon-Thu)? yes/no");
 var deliveries = prompt("How many deliveries have you completed today?");
 var target = prompt("What's your target income today?");
 var weekDay;
@@ -46,13 +40,13 @@ else {
 }
 
 if (deliveries * weekDay > target) 
-	document.write("Well done! You beat your target. ");
+	document.write("Well done! You've beat your target. ");
 
 else {
-	document.write("£" + (target - deliveries * weekDay) + " to go " + "(" + (target - deliveries * weekDay) / weekDay + " Deliveries). ");
+	document.write(target - deliveries * weekDay + " pounds to go, ");
 }
 
-document.write("£" + (deliveries * weekDay) + " so far.");
+document.write(+ deliveries * weekDay + " pounds so far.");
 </script>
 </div>
 </font></p>
