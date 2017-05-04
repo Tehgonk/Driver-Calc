@@ -43,7 +43,7 @@ if (deliveries * weekDay > target)
 	document.write("Well done! You've beat your target. ");
 
 else {
-	document.write(target - deliveries * weekDay + " to go " + "(" + deliveries * weekDay / weekDay + " Deliveries). ");
+	document.write(target - deliveries * weekDay + " to go " + "(" + (target - deliveries * weekDay) / weekDay + " Deliveries)");
 }
 
 document.write(+ deliveries * weekDay + " pounds so far.");
