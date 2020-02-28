@@ -1,51 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-div {
-  height: 70px;
-  line-height: 1000px;
-  vertical-align: middle;
-  text-align: center;
-}
-</style>
-</head>
-<body>
-
-<p><font size="6">
-<div>
-<h2>Driver Calc</h2>
-</div>
-</font></p>
-
-<p id="calc"></p>
-
-<p><font size="6">
-<div>
 <script>
-var day = prompt("Is it a week day (Mon-Thu)? yes/no");
-var deliveries = prompt("How many deliveries have you completed today?");
-var target = prompt("What's your target income today?");
-var weekDay;
-
-if (day === "yes") {
-	weekDay = 3.75;
-}
-else {
-	weekDay = 4.25;
-}
-
-if (deliveries * weekDay > target) 
-	document.write("Well done! You beat your target. ");
-
-else {
-	document.write("£" + (target - deliveries * weekDay) + " to go " + "(" + (target - deliveries * weekDay) / weekDay + " Deliveries). ");
-}
-
-document.write("£" + (deliveries * weekDay) + " so far.");
+var b = prompt("number of days?")
+var n = parseInt(b);
+var p = (n+(1));
+document.write (n*p/2);
 </script>
-</div>
-</font></p>
-
-</body>
-</html>
